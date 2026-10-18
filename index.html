@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description"
+    content="พอร์ตโฟลิโอของ นายภูวดล ลีลาน้อย (บีม) นักศึกษา ICT มหาวิทยาลัยศรีปทุม มีประสบการณ์พัฒนาเว็บไซต์ ณ อบจ. นครราชสีมา และเป็น Software Tester ณ บริษัท มีเมสเสจ จำกัด">
+  <meta name="keywords"
+    content="ภูวดล ลีลาน้อย, บีม, Portfolio, Web Developer, Software Tester, QA, SPU, ICT, พอร์ตโฟลิโอ">
+  <meta name="author" content="ภูวดล ลีลาน้อย (Phuwadol Leelanoi)">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt for Modern Thai/English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Animated Background Glows -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <div class="logo-badge">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>BEEM<span class="gradient-text">.DEV</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active" id="navHome">หน้าหลัก</a></li>
+          <li><a href="#about" class="nav-link" id="navAbout">เกี่ยวกับฉัน</a></li>
+          <li><a href="#education" class="nav-link" id="navEducation">การศึกษา</a></li>
+          <li><a href="#experience" class="nav-link" id="navExperience">ประสบการณ์</a></li>
+          <li><a href="#skills" class="nav-link" id="navSkills">ทักษะ & ความสามารถ</a></li>
+          <li><a href="#showcase" class="nav-link" id="navShowcase">ผลงาน</a></li>
+          <li><a href="#contact" class="nav-link" id="navContact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggleBtn" aria-label="สลับธีม สว่าง/มืด" title="สลับธีม">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="navContactBtn">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>ติดต่อฉัน</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนูบนมือถือ">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge" id="availabilityBadge">
+            <span class="pulse-dot"></span>
+            <span>พร้อมรับโอกาสฝึกงานและร่วมงานด้าน Tech / QA / Dev</span>
+          </div>
+
+          <h1 class="hero-title">
+            สวัสดีครับ, ผม <br>
+            <span class="gradient-text">ภูวดล ลีลาน้อย</span> (บีม)
+          </h1>
+
+          <div class="typed-wrapper">
+            <span>บทบาท:</span>
+            <span class="typed-text" id="typedRoleText">Web Developer</span>
+          </div>
+
+          <p class="hero-description">
+            นักศึกษาปริญญาตรี สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT) มหาวิทยาลัยศรีปทุม
+            ผู้มีความหลงใหลในการพัฒนาเว็บไซต์ที่ทันสมัย และการทดสอบระบบ (Software Quality Assurance)
+            เพื่อสร้างประสบการณ์การใช้งานที่มีคุณภาพและไร้ข้อผิดพลาด
+          </p>
+
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary" id="heroViewExpBtn">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>ดูประวัติ & ผลงาน</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="heroContactBtn">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>ติดต่อด่วน</span>
+            </a>
+            <button class="btn btn-outline" id="printResumeBtn" onclick="window.print()"
+              title="พิมพ์หรือบันทึกเป็น PDF">
+              <i class="fa-solid fa-print"></i>
+              <span>พิมพ์เรซูเม่</span>
+            </button>
+          </div>
+
+          <!-- Hero Highlights / Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number cyan-gradient-text">3.88</span>
+              <span class="stat-label">GPA ปวช. เทคนิคบุรีรัมย์</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number gradient-text">3.48</span>
+              <span class="stat-label">GPA ปวส. อาชีวะโคราช</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number cyan-gradient-text">20</span>
+              <span class="stat-label">อายุ (ปี) | คนรุ่นใหม่ไฟแรง</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Avatar Card -->
+        <div class="hero-visual">
+          <div class="visual-card-wrapper">
+            <div class="avatar-frame">
+              <div class="avatar-inner">
+                <img src="assets/images/profile.jpg" alt="ภาพโปรไฟล์ นายภูวดล ลีลาน้อย (บีม)" class="profile-avatar-img"
+                  id="profileAvatarImg">
+              </div>
+            </div>
+
+            <!-- Floating Highlights Badge 1 -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon gold">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">ผลการเรียนยอดเยี่ยม</div>
+                <div class="badge-text-sub">GPA สูงสุด 3.88</div>
+              </div>
+            </div>
+
+            <!-- Floating Highlights Badge 2 -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon blue">
+                <i class="fa-solid fa-vial-circle-check"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">ประสบการณ์จริง</div>
+                <div class="badge-text-sub">อบจ. โคราช & MeMessage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-regular fa-user"></i> ข้อมูลส่วนตัว</span>
+        <h2 class="section-title">เกี่ยวกับ<span class="gradient-text">ตัวฉัน</span></h2>
+        <p class="section-desc">ทำความรู้จักกับตัวตน ความมุ่งมั่น และเป้าหมายในสายงานเทคโนโลยีของผม</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Personal Profile Card -->
+        <div class="about-card" id="personalInfoCard">
+          <div class="about-card-header">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h3 class="about-card-title">ข้อมูลทั่วไป (Personal Info)</h3>
+          </div>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">ชื่อ - นามสกุล</span>
+              <span class="info-value">นายภูวดล ลีลาน้อย</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">ชื่อเล่น</span>
+              <span class="info-value">บีม (BEEM)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">อายุ</span>
+              <span class="info-value">20 ปี</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">สัญชาติ / ภาษา</span>
+              <span class="info-value">ไทย (Thai / English)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">การศึกษาปัจจุบัน</span>
+              <span class="info-value">ป.ตรี ICT ม.ศรีปทุม (SPU)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">สายงานที่มุ่งเน้น</span>
+              <span class="info-value">Web Dev & Software QA</span>
+            </div>
+          </div>
+
+          <div class="quote-box">
+            "มุ่งมั่นพัฒนาเว็บไซต์ที่มีความเสถียร สวยงาม ตอบสนองผู้ใช้ และผ่านการทดสอบคุณภาพ (QA)
+            อย่างเข้มงวดเพื่อสร้างคุณค่าที่แท้จริงให้แก่ผู้ใช้งาน"
+          </div>
+        </div>
+
+        <!-- Professional Passion & Highlights -->
+        <div class="about-card" id="professionalStrengthsCard">
+          <div class="about-card-header">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="about-card-title">จุดแข็งและเป้าหมาย (Strengths & Focus)</h3>
+          </div>
+
+          <div class="strengths-list">
+            <div class="strength-item">
+              <div class="strength-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h4 class="strength-title">ทักษะการสร้างและปรับปรุงเว็บไซต์</h4>
+                <p class="strength-desc">มีประสบการณ์ตรงในการพัฒนาและดูแลเว็บไซต์ภาครัฐให้รองรับผู้ใช้งานจริง
+                  มีโครงสร้างที่เป็นระเบียบ ใช้งานง่าย และมีความปลอดภัย</p>
+              </div>
+            </div>
+
+            <div class="strength-item">
+              <div class="strength-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div>
+                <h4 class="strength-title">ความละเอียดรอบคอบในการเป็น Tester</h4>
+                <p class="strength-desc">ผ่านการฝึกงานตรวจสอบและค้นหาข้อผิดพลาด (Bugs)
+                  ของโปรแกรมและแอปพลิเคชันอย่างเป็นระบบ ช่วยลดปัญหาและยกระดับคุณภาพซอฟต์แวร์</p>
+              </div>
+            </div>
+
+            <div class="strength-item">
+              <div class="strength-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h4 class="strength-title">พื้นฐานทางวิชาการและผลการเรียนเด่น</h4>
+                <p class="strength-desc">สำเร็จการศึกษาระดับ ปวช. ด้วย GPA 3.88 และระดับ ปวส. ด้วย GPA 3.48
+                  สะท้อนถึงความรับผิดชอบและความตั้งใจจริงในการเรียนรู้</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Journey Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> ประวัติการศึกษา</span>
+        <h2 class="section-title">เส้นทางการศึกษา <span class="gradient-text">(Education)</span></h2>
+        <p class="section-desc">พื้นฐานความรู้ที่สั่งสมตั้งแต่วิชาชีพสู่ระดับอุดมศึกษาด้านเทคโนโลยีสารสนเทศ</p>
+      </div>
+
+      <div class="timeline" id="educationTimeline">
+        <!-- Education 1: Bachelor's Degree (Current) -->
+        <div class="timeline-item active">
+          <div class="timeline-node">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">ระดับปริญญาตรี (กำลังศึกษา)</h3>
+                <div class="timeline-institution">มหาวิทยาลัยศรีปทุม (Sripatum University - SPU)</div>
+              </div>
+              <span class="timeline-badge badge-current">
+                <i class="fa-solid fa-spinner fa-spin"></i> ปัจจุบัน
+              </span>
+            </div>
+            <p class="timeline-desc">
+              <strong>สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)</strong> — มุ่งเน้นการศึกษาเทคโนโลยีสารสนเทศยุคใหม่,
+              การพัฒนาซอฟต์แวร์และแอปพลิเคชัน, สถาปัตยกรรมระบบเครือข่าย, ความมั่นคงปลอดภัยไซเบอร์
+              ตลอดจนการประยุกต์ใช้เทคโนโลยีเพื่อตอบสนองธุรกิจยุคดิจิทัล
+            </p>
+            <div class="timeline-meta">
+              <span><i class="fa-solid fa-location-dot"></i> กรุงเทพมหานคร</span>
+              <span><i class="fa-solid fa-book-open"></i> สาขาวิชา ICT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 2: High Vocational Certificate (ปวส.) -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
+                <div class="timeline-institution">วิทยาลัยอาชีวศึกษานครราชสีมา</div>
+              </div>
+              <span class="timeline-badge badge-success">
+                <i class="fa-solid fa-star"></i> GPA 3.48 (ดีเยี่ยม)
+              </span>
+            </div>
+            <p class="timeline-desc">
+              ศึกษาหลักสูตรวิชาชีพขั้นสูงด้านคอมพิวเตอร์และการพัฒนาโปรแกรม เน้นทักษะภาคปฏิบัติ การออกแบบฐานข้อมูล
+              การเขียนโค้ดเว็บไซต์ และการลงมือปฏิบัติงานจริงร่วมกับหน่วยงานภาครัฐในจังหวัดนครราชสีมา
+            </p>
+            <div class="timeline-meta">
+              <span><i class="fa-solid fa-location-dot"></i> จังหวัดนครราชสีมา</span>
+              <span><i class="fa-solid fa-chart-line"></i> เกรดเฉลี่ยสะสม 3.48</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 3: Vocational Certificate (ปวช.) -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+                <div class="timeline-institution">วิทยาลัยเทคนิคบุรีรัมย์</div>
+              </div>
+              <span class="timeline-badge badge-honor">
+                <i class="fa-solid fa-trophy"></i> GPA 3.88 (เกียรตินิยม)
+              </span>
+            </div>
+            <p class="timeline-desc">
+              สำเร็จการศึกษาด้วยผลการเรียนดีเด่น ปูรากฐานความรู้ด้านคอมพิวเตอร์ ฮาร์ดแวร์ ซอฟต์แวร์เบื้องต้น
+              โครงข่ายคอมพิวเตอร์ และการฝึกทักษะการตรวจสอบคุณภาพซอฟต์แวร์ในระดับองค์กรเอกชน
+            </p>
+            <div class="timeline-meta">
+              <span><i class="fa-solid fa-location-dot"></i> จังหวัดบุรีรัมย์</span>
+              <span><i class="fa-solid fa-award"></i> เกรดเฉลี่ยสะสม 3.88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience & Internship Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> ประสบการณ์การทำงาน</span>
+        <h2 class="section-title">ประวัติการทำงาน <span class="gradient-text">& การฝึกงาน</span></h2>
+        <p class="section-desc">ประสบการณ์จริงในการพัฒนาเว็บไซต์ภาครัฐ และการทดสอบระบบซอฟต์แวร์ในบริษัทเอกชน</p>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Experience 1: องค์การบริหารส่วนจังหวัดนครราชสีมา (ปวส.) -->
+        <div class="exp-card" id="expPaoCard">
+          <div class="exp-card-header">
+            <div class="exp-org-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <span class="exp-period-badge">
+              <i class="fa-regular fa-calendar"></i> ช่วงระดับ ปวส.
+            </span>
+          </div>
+
+          <h3 class="exp-role">ผู้พัฒนาและปรับปรุงเว็บไซต์ (Web Developer Intern)</h3>
+          <div class="exp-organization">
+            <i class="fa-solid fa-landmark"></i> องค์การบริหารส่วนจังหวัดนครราชสีมา (อบจ. นครราชสีมา)
+          </div>
+
+          <div class="exp-responsibilities">
+            <div class="exp-responsibilities-title">หน้าที่และความรับผิดชอบหลัก:</div>
+            <ul class="task-list">
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>ปรับปรุงและพัฒนาเว็บไซต์:</strong>
+                  รับผิดชอบดูแลและพัฒนาเว็บไซต์หน่วยงานในสังกัดองค์การบริหารส่วนจังหวัดนครราชสีมาให้ทันสมัยและใช้งานง่าย</span>
+              </li>
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>Responsive Web Design:</strong>
+                  ปรับแต่งการแสดงผลของหน้าเว็บให้รองรับการเปิดใช้งานได้อย่างสมบูรณ์แบบบนคอมพิวเตอร์ แท็บเล็ต
+                  และสมาร์ทโฟน</span>
+              </li>
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>อัปเดตระบบสารสนเทศ:</strong> ดูแลการจัดการเนื้อหา ข่าวสารประชาสัมพันธ์ เอกสารราชการ
+                  และงานบริการประชาชนของหน่วยงานให้ถูกต้องตามมาตรฐาน</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-tags">
+            <span class="tag-pill">Web Development</span>
+            <span class="tag-pill">HTML5 / CSS3</span>
+            <span class="tag-pill">JavaScript</span>
+            <span class="tag-pill">Website Maintenance</span>
+            <span class="tag-pill">UI Design</span>
+          </div>
+        </div>
+
+        <!-- Experience 2: บริษัท มีเมสเสจ จำกัด (ปวช.) -->
+        <div class="exp-card" id="expMemessageCard">
+          <div class="exp-card-header">
+            <div class="exp-org-icon tester">
+              <i class="fa-solid fa-bug-slash"></i>
+            </div>
+            <span class="exp-period-badge">
+              <i class="fa-regular fa-calendar"></i> ช่วงระดับ ปวช.
+            </span>
+          </div>
+
+          <h3 class="exp-role">ผู้ตรวจสอบและทดสอบคุณภาพซอฟต์แวร์ (Software Tester / QA Intern)</h3>
+          <div class="exp-organization">
+            <i class="fa-solid fa-building"></i> บริษัท มีเมสเสจ จำกัด (MeMessage Co., Ltd.)
+          </div>
+
+          <div class="exp-responsibilities">
+            <div class="exp-responsibilities-title">หน้าที่และความรับผิดชอบหลัก:</div>
+            <ul class="task-list">
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>Software Quality Assurance:</strong> ได้รับมอบหมายให้เป็น Tester
+                  ตรวจสอบและทดสอบคุณภาพของโปรแกรมหรือแอปพลิเคชันอย่างละเอียดรอบคอบ</span>
+              </li>
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>ค้นหาและบันทึกข้อผิดพลาด (Bug Hunting):</strong> ตรวจหา Bug และจุดบกพร่องทั้งด้าน
+                  Functionality และ User Experience ก่อนส่งมอบให้ผู้ใช้งานจริง</span>
+              </li>
+              <li class="task-item">
+                <i class="fa-solid fa-check-double task-bullet"></i>
+                <span><strong>จัดทำรายงานข้อผิดพลาด:</strong> สื่อสารและประสานงานร่วมกับทีมนักพัฒนาซอฟต์แวร์
+                  โดยระบุขั้นตอนการเกิดบั๊ก (Steps to Reproduce) เพื่อการแก้ไขที่รวดเร็ว</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-tags">
+            <span class="tag-pill">Software Testing</span>
+            <span class="tag-pill">QA & Test Cases</span>
+            <span class="tag-pill">Bug Tracking</span>
+            <span class="tag-pill">Manual Testing</span>
+            <span class="tag-pill">App Verification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Competencies -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> ทักษะและความถนัด</span>
+        <h2 class="section-title">ทักษะความสามารถ <span class="gradient-text">(Skills)</span></h2>
+        <p class="section-desc">การผสมผสานระหว่างทักษะการสร้างเว็บ การตรวจสอบคุณภาพ และเครื่องมือที่ใช้ทำงาน</p>
+      </div>
+
+      <!-- Skills Category Filter Buttons -->
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="dev">Web Development</button>
+        <button class="filter-btn" data-filter="qa">Software QA & Testing</button>
+        <button class="filter-btn" data-filter="tools">เครื่องมือ & การทำงาน</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill 1 -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-html5"></i></div>
+            <span class="skill-level-text">ความชำนาญสูง</span>
+          </div>
+          <div class="skill-name">HTML5 & Semantic Structure</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 90%;"></div>
+          </div>
+          <div class="skill-desc">โครงสร้างเว็บมาตรฐาน, Accessibility, SEO Friendly</div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-css3-alt"></i></div>
+            <span class="skill-level-text">ความชำนาญสูง</span>
+          </div>
+          <div class="skill-name">CSS3 & Responsive Design</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 88%;"></div>
+          </div>
+          <div class="skill-desc">Flexbox, CSS Grid, Custom Design System, Media Queries</div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-js"></i></div>
+            <span class="skill-level-text">ความชำนาญดี</span>
+          </div>
+          <div class="skill-name">JavaScript (ES6+)</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 80%;"></div>
+          </div>
+          <div class="skill-desc">DOM Manipulation, Fetch API, Event Handling, Logic</div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card" data-category="qa">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-vial"></i></div>
+            <span class="skill-level-text">ความชำนาญสูง</span>
+          </div>
+          <div class="skill-name">Software Manual Testing</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 92%;"></div>
+          </div>
+          <div class="skill-desc">Functional, Regression, Smoke Testing & App Verification</div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card" data-category="qa">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-clipboard-check"></i></div>
+            <span class="skill-level-text">ความชำนาญสูง</span>
+          </div>
+          <div class="skill-name">Test Case & Bug Reporting</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 88%;"></div>
+          </div>
+          <div class="skill-desc">การออกแบบขั้นตอนทดสอบ และระบุ Steps to Reproduce อย่างแม่นยำ</div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-globe"></i></div>
+            <span class="skill-level-text">ความชำนาญดี</span>
+          </div>
+          <div class="skill-name">Web Maintenance & CMS</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+          <div class="skill-desc">ดูแลอัปเดตระบบสารสนเทศ และความเสถียรของเว็บไซต์</div>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-git-alt"></i></div>
+            <span class="skill-level-text">ความชำนาญดี</span>
+          </div>
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 78%;"></div>
+          </div>
+          <div class="skill-desc">Version Control, Repository Management, Teamwork</div>
+        </div>
+
+        <!-- Skill 8 -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-code"></i></div>
+            <span class="skill-level-text">ความชำนาญสูง</span>
+          </div>
+          <div class="skill-name">Dev Tools & Inspection</div>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 86%;"></div>
+          </div>
+          <div class="skill-desc">Chrome DevTools, Network Analysis, Console Debugging</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase / Representative Projects -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-cubes"></i> ผลงานเด่น</span>
+        <h2 class="section-title">ผลงานและ<span class="gradient-text">กรณีศึกษา</span></h2>
+        <p class="section-desc">ตัวอย่างโครงการและประสบการณ์ที่ได้ลงมือปฏิบัติจริง</p>
+      </div>
+
+      <div class="showcase-grid">
+        <!-- Project 1: อบจ. โคราช -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-building-flag project-thumb-icon"></i>
+            <span class="project-thumb-badge">Web Maintenance</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ระบบเว็บไซต์หน่วยงาน อบจ. นครราชสีมา</h3>
+            <p class="project-desc">
+              โครงการปรับปรุงและพัฒนาเว็บไซต์หน่วยงานในสังกัด อบจ. นครราชสีมา เพื่อยกระดับความทันสมัย
+              เพิ่มประสิทธิภาพการเข้าถึงข้อมูลข่าวสารของประชาชน
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-tags">
+                <span class="tag-pill">HTML/CSS</span>
+                <span class="tag-pill">JS</span>
+              </div>
+              <button class="project-link-btn view-project-btn" data-project="korat">
+                <span>รายละเอียด</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: มีเมสเสจ Tester -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-list-check project-thumb-icon"></i>
+            <span class="project-thumb-badge">QA / Testing</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Software QA & Bug Tracking System</h3>
+            <p class="project-desc">
+              การจัดทำ Test Cases และกระบวนการทดสอบคุณภาพแอปพลิเคชันอย่างเป็นระบบ ณ บริษัท มีเมสเสจ จำกัด ป้องกัน Bug
+              หลุดสู่ผู้ใช้งานจริง
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-tags">
+                <span class="tag-pill">Manual Test</span>
+                <span class="tag-pill">Bug Hunt</span>
+              </div>
+              <button class="project-link-btn view-project-btn" data-project="memessage">
+                <span>รายละเอียด</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Personal Modern Portfolio -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-display project-thumb-icon"></i>
+            <span class="project-thumb-badge">Web Design</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Interactive Personal Portfolio</h3>
+            <p class="project-desc">
+              เว็บไซต์แนะนำตัวและผลงานที่พัฒนาด้วย Modern Vanilla Web Stack, ระบบสลับธีม Dark/Light,
+              ฟังก์ชันคัดลอกข้อมูล และพร้อมสั่งพิมพ์เป็นเรซูเม่
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-tags">
+                <span class="tag-pill">HTML5</span>
+                <span class="tag-pill">Custom CSS</span>
+              </div>
+              <button class="project-link-btn view-project-btn" data-project="portfolio">
+                <span>รายละเอียด</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-regular fa-envelope"></i> ติดต่อสอบถาม</span>
+        <h2 class="section-title">ร่วมงานหรือ<span class="gradient-text">ติดต่อฉัน</span></h2>
+        <p class="section-desc">สามารถติดต่อได้โดยตรงทางโทรศัพท์ อีเมล หรือส่งข้อความผ่านแบบฟอร์มด้านล่าง</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-grid">
+          <!-- Direct Contact Channels -->
+          <div class="contact-info-panel">
+            <div>
+              <h3 class="contact-panel-title">ช่องทางการติดต่อตรง</h3>
+              <p class="contact-panel-desc">
+                ยินดีรับฟังทุกโอกาส ทั้งการฝึกงาน โครงการพัฒนาเว็บไซต์ หรืองานตรวจสอบคุณภาพซอฟต์แวร์ (Tester / QA)
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <!-- Phone Card -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <div class="contact-label">เบอร์โทรศัพท์</div>
+                    <a href="tel:0956038960" class="contact-val"
+                      style="text-decoration: none; color: inherit;">095-603-8960</a>
+                  </div>
+                </div>
+                <button class="copy-btn copy-trigger" data-copy="0956038960" data-label="เบอร์โทร 0956038960"
+                  title="คัดลอกเบอร์โทร">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>คัดลอก</span>
+                </button>
+              </div>
+
+              <!-- Email Card -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="contact-label">อีเมล</div>
+                    <a href="mailto:bnem1027@gmail.com" class="contact-val"
+                      style="text-decoration: none; color: inherit;">bnem1027@gmail.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn copy-trigger" data-copy="bnem1027@gmail.com"
+                  data-label="อีเมล bnem1027@gmail.com" title="คัดลอกอีเมล">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>คัดลอก</span>
+                </button>
+              </div>
+
+              <!-- Location / SPU Card -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <div class="contact-label">สถาบันปัจจุบัน</div>
+                    <div class="contact-val" style="font-size: 0.95rem;">ICT มหาวิทยาลัยศรีปทุม (SPU)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="tel:0956038960" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>โทรติดต่อทันที (095-603-8960)</span>
+              </a>
+              <a href="mailto:bnem1027@gmail.com" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>ส่งอีเมลตรง (bnem1027@gmail.com)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Quick Message Form -->
+          <div class="contact-form-panel">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.2rem; font-weight: 700;">ส่งข้อความถึงบีม</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="senderName" class="form-label">ชื่อของคุณ / ชื่อหน่วยงาน <span
+                    style="color: #ef4444;">*</span></label>
+                <input type="text" id="senderName" class="form-control" placeholder="เช่น บจก. เทคโนโลยี / คุณสมชาย"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">อีเมลสำหรับติดต่อกลับ <span
+                    style="color: #ef4444;">*</span></label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="example@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">ข้อความ / รายละเอียดงาน <span
+                    style="color: #ef4444;">*</span></label>
+                <textarea id="senderMessage" class="form-control"
+                  placeholder="พิมพ์ข้อความที่ต้องการติดต่อ ข้อเสนอแนะ หรือรายละเอียดตำแหน่งงานที่นี่..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitFormBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>ส่งข้อความ</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Details Modal -->
+  <div class="modal-overlay" id="projectModalOverlay" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalCloseBtn" aria-label="ปิดหน้าต่าง">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalProjCategory"
+        style="color: var(--accent-cyan); font-weight: 700; font-size: 0.85rem; margin-bottom: 0.4rem; text-transform: uppercase;">
+        Category
+      </div>
+      <h3 id="modalProjTitle" style="font-size: 1.5rem; margin-bottom: 0.8rem; font-weight: 800;">
+        Project Title
+      </h3>
+      <p id="modalProjDesc" style="color: var(--text-secondary); margin-bottom: 1.2rem; line-height: 1.6;">
+        Project description
+      </p>
+
+      <div style="font-weight: 700; margin-bottom: 0.6rem; color: var(--text-primary); font-size: 0.95rem;">
+        รายละเอียดและความรับผิดชอบ:
+      </div>
+      <ul id="modalProjDetails" class="task-list" style="margin-bottom: 1.4rem;">
+        <!-- Injected via JavaScript -->
+      </ul>
+
+      <div style="font-weight: 700; margin-bottom: 0.6rem; color: var(--text-primary); font-size: 0.95rem;">
+        เทคโนโลยีและทักษะที่ใช้:
+      </div>
+      <div id="modalProjTags" class="exp-tags" style="padding-top: 0; border-top: none;">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Placeholder -->
+  <div class="toast-notification" id="toastNotice" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage">แจ้งเตือน</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand-logo" style="justify-content: center;">
+        <div class="logo-badge" style="width: 32px; height: 32px; font-size: 0.9rem;">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>ภูวดล ลีลาน้อย (บีม)</span>
+      </div>
+      <p>สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT) มหาวิทยาลัยศรีปทุม (SPU)</p>
+      <p style="font-size: 0.82rem; color: var(--text-muted);">
+        © 2026 Phuwadol Leelanoi (BEEM). All Rights Reserved. Crafted with Modern Web Standards.
+      </p>
+      <a href="#home" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i> กลับขึ้นด้านบน
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
