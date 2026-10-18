@@ -1,7 +1,4 @@
-/**
- * BEAM PORTFOLIO - MAIN INTERACTIVE JAVASCRIPT
- * Phuwadol Leelanoi (ภูวดล ลีลาน้อย)
- */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
