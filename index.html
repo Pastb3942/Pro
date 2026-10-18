@@ -49,24 +49,30 @@
       <!-- Desktop Nav Links -->
       <nav>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="nav-link active" id="navHome">หน้าหลัก</a></li>
-          <li><a href="#about" class="nav-link" id="navAbout">เกี่ยวกับฉัน</a></li>
-          <li><a href="#education" class="nav-link" id="navEducation">การศึกษา</a></li>
-          <li><a href="#experience" class="nav-link" id="navExperience">ประสบการณ์</a></li>
-          <li><a href="#skills" class="nav-link" id="navSkills">ทักษะ & ความสามารถ</a></li>
-          <li><a href="#showcase" class="nav-link" id="navShowcase">ผลงาน</a></li>
-          <li><a href="#contact" class="nav-link" id="navContact">ติดต่อ</a></li>
+          <li><a href="#home" class="nav-link active" id="navHome" data-i18n="nav.home">หน้าหลัก</a></li>
+          <li><a href="#about" class="nav-link" id="navAbout" data-i18n="nav.about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#education" class="nav-link" id="navEducation" data-i18n="nav.education">การศึกษา</a></li>
+          <li><a href="#experience" class="nav-link" id="navExperience" data-i18n="nav.experience">ประสบการณ์</a></li>
+          <li><a href="#skills" class="nav-link" id="navSkills" data-i18n="nav.skills">ทักษะ & ความสามารถ</a></li>
+          <li><a href="#showcase" class="nav-link" id="navShowcase" data-i18n="nav.showcase">ผลงาน</a></li>
+          <li><a href="#contact" class="nav-link" id="navContact" data-i18n="nav.contact">ติดต่อ</a></li>
         </ul>
       </nav>
 
-      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <!-- Nav Actions (Language Switcher, Theme Toggle & CTA) -->
       <div class="nav-actions">
+        <button class="lang-btn" id="langToggleBtn" aria-label="สลับภาษา TH/EN" title="สลับภาษา (Switch Language)">
+          <i class="fa-solid fa-globe lang-icon"></i>
+          <span class="lang-badge" id="langBadge">
+            <span class="lang-active">TH</span><span class="lang-divider">/</span><span class="lang-inactive">EN</span>
+          </span>
+        </button>
         <button class="theme-btn" id="themeToggleBtn" aria-label="สลับธีม สว่าง/มืด" title="สลับธีม">
           <i class="fa-solid fa-sun"></i>
         </button>
         <a href="#contact" class="btn btn-primary btn-sm" id="navContactBtn">
           <i class="fa-regular fa-paper-plane"></i>
-          <span>ติดต่อฉัน</span>
+          <span data-i18n="nav.contact_btn">ติดต่อฉัน</span>
         </a>
         <button class="mobile-toggle" id="mobileMenuToggle" aria-label="เปิดเมนูบนมือถือ">
           <i class="fa-solid fa-bars"></i>
@@ -83,20 +89,20 @@
         <div class="hero-content">
           <div class="status-badge" id="availabilityBadge">
             <span class="pulse-dot"></span>
-            <span>พร้อมรับโอกาสฝึกงานและร่วมงานด้าน Tech / QA / Dev</span>
+            <span data-i18n="hero.status">พร้อมรับโอกาสฝึกงานและร่วมงานด้าน Tech / QA / Dev</span>
           </div>
 
-          <h1 class="hero-title">
+          <h1 class="hero-title" id="heroTitle" data-i18n="hero.title">
             Poovadol Leelanoi, Beem <br>
             <span class="gradient-text">ภูวดล ลีลาน้อย</span> (บีม)
           </h1>
 
           <div class="typed-wrapper">
-            <span>บทบาท:</span>
+            <span data-i18n="hero.role_label">บทบาท:</span>
             <span class="typed-text" id="typedRoleText">Web Developer</span>
           </div>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="hero.desc">
             นักศึกษาปริญญาตรี สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT) มหาวิทยาลัยศรีปทุม
             ผู้มีความหลงใหลในการพัฒนาเว็บไซต์ที่ทันสมัย และการทดสอบระบบ (Software Quality Assurance)
             เพื่อสร้างประสบการณ์การใช้งานที่มีคุณภาพและไร้ข้อผิดพลาด
@@ -105,16 +111,16 @@
           <div class="hero-cta">
             <a href="#experience" class="btn btn-primary" id="heroViewExpBtn">
               <i class="fa-solid fa-briefcase"></i>
-              <span>ดูประวัติ & ผลงาน</span>
+              <span data-i18n="hero.btn_exp">ดูประวัติ & ผลงาน</span>
             </a>
             <a href="#contact" class="btn btn-outline" id="heroContactBtn">
               <i class="fa-regular fa-comment-dots"></i>
-              <span>ติดต่อด่วน</span>
+              <span data-i18n="hero.btn_contact">ติดต่อด่วน</span>
             </a>
             <button class="btn btn-outline" id="printResumeBtn" onclick="window.print()"
               title="พิมพ์หรือบันทึกเป็น PDF">
               <i class="fa-solid fa-print"></i>
-              <span>พิมพ์เรซูเม่</span>
+              <span data-i18n="hero.btn_print">พิมพ์เรซูเม่</span>
             </button>
           </div>
 
@@ -122,15 +128,15 @@
           <div class="hero-stats">
             <div class="stat-item">
               <span class="stat-number cyan-gradient-text">3.88</span>
-              <span class="stat-label">GPA ปวช. เทคนิคบุรีรัมย์</span>
+              <span class="stat-label" data-i18n="hero.stat1_label">GPA ปวช. เทคนิคบุรีรัมย์</span>
             </div>
             <div class="stat-item">
               <span class="stat-number gradient-text">3.48</span>
-              <span class="stat-label">GPA ปวส. อาชีวะโคราช</span>
+              <span class="stat-label" data-i18n="hero.stat2_label">GPA ปวส. อาชีวะโคราช</span>
             </div>
             <div class="stat-item">
               <span class="stat-number cyan-gradient-text">20</span>
-              <span class="stat-label">อายุ (ปี) | คนรุ่นใหม่ไฟแรง</span>
+              <span class="stat-label" data-i18n="hero.stat3_label">อายุ (ปี) | คนรุ่นใหม่ไฟแรง</span>
             </div>
           </div>
         </div>
@@ -151,8 +157,8 @@
                 <i class="fa-solid fa-award"></i>
               </div>
               <div>
-                <div class="badge-text-title">ผลการเรียนยอดเยี่ยม</div>
-                <div class="badge-text-sub">GPA สูงสุด 3.88</div>
+                <div class="badge-text-title" data-i18n="hero.badge1_title">ผลการเรียนยอดเยี่ยม</div>
+                <div class="badge-text-sub" data-i18n="hero.badge1_sub">GPA สูงสุด 3.88</div>
               </div>
             </div>
 
@@ -162,8 +168,8 @@
                 <i class="fa-solid fa-vial-circle-check"></i>
               </div>
               <div>
-                <div class="badge-text-title">ประสบการณ์จริง</div>
-                <div class="badge-text-sub">อบจ. โคราช & MeMessage</div>
+                <div class="badge-text-title" data-i18n="hero.badge2_title">ประสบการณ์จริง</div>
+                <div class="badge-text-sub" data-i18n="hero.badge2_sub">อบจ. โคราช & MeMessage</div>
               </div>
             </div>
           </div>
@@ -176,9 +182,9 @@
   <section class="section" id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag"><i class="fa-regular fa-user"></i> ข้อมูลส่วนตัว</span>
-        <h2 class="section-title">เกี่ยวกับ<span class="gradient-text">ตัวฉัน</span></h2>
-        <p class="section-desc">ทำความรู้จักกับตัวตน ความมุ่งมั่น และเป้าหมายในสายงานเทคโนโลยีของผม</p>
+        <span class="section-tag" data-i18n="about.tag"><i class="fa-regular fa-user"></i> ข้อมูลส่วนตัว</span>
+        <h2 class="section-title" data-i18n="about.title">เกี่ยวกับ<span class="gradient-text">ตัวฉัน</span></h2>
+        <p class="section-desc" data-i18n="about.desc">ทำความรู้จักกับตัวตน ความมุ่งมั่น และเป้าหมายในสายงานเทคโนโลยีของผม</p>
       </div>
 
       <div class="about-grid">
@@ -188,37 +194,37 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-id-card"></i>
             </div>
-            <h3 class="about-card-title">ข้อมูลทั่วไป (Personal Info)</h3>
+            <h3 class="about-card-title" data-i18n="about.card1_title">ข้อมูลทั่วไป (Personal Info)</h3>
           </div>
 
           <div class="info-list">
             <div class="info-item">
-              <span class="info-label">ชื่อ - นามสกุล</span>
-              <span class="info-value">นายภูวดล ลีลาน้อย</span>
+              <span class="info-label" data-i18n="about.lbl_name">ชื่อ - นามสกุล</span>
+              <span class="info-value" data-i18n="about.val_name">นายภูวดล ลีลาน้อย</span>
             </div>
             <div class="info-item">
-              <span class="info-label">ชื่อเล่น</span>
-              <span class="info-value">บีม (BEEM)</span>
+              <span class="info-label" data-i18n="about.lbl_nick">ชื่อเล่น</span>
+              <span class="info-value" data-i18n="about.val_nick">บีม (BEEM)</span>
             </div>
             <div class="info-item">
-              <span class="info-label">อายุ</span>
-              <span class="info-value">20 ปี</span>
+              <span class="info-label" data-i18n="about.lbl_age">อายุ</span>
+              <span class="info-value" data-i18n="about.val_age">20 ปี</span>
             </div>
             <div class="info-item">
-              <span class="info-label">สัญชาติ / ภาษา</span>
-              <span class="info-value">ไทย (Thai / English)</span>
+              <span class="info-label" data-i18n="about.lbl_lang">สัญชาติ / ภาษา</span>
+              <span class="info-value" data-i18n="about.val_lang">ไทย (Thai / English)</span>
             </div>
             <div class="info-item">
-              <span class="info-label">การศึกษาปัจจุบัน</span>
-              <span class="info-value">ป.ตรี ICT ม.ศรีปทุม (SPU)</span>
+              <span class="info-label" data-i18n="about.lbl_edu">การศึกษาปัจจุบัน</span>
+              <span class="info-value" data-i18n="about.val_edu">ป.ตรี ICT ม.ศรีปทุม (SPU)</span>
             </div>
             <div class="info-item">
-              <span class="info-label">สายงานที่มุ่งเน้น</span>
-              <span class="info-value">Web Dev & Software QA</span>
+              <span class="info-label" data-i18n="about.lbl_focus">สายงานที่มุ่งเน้น</span>
+              <span class="info-value" data-i18n="about.val_focus">Web Dev & Software QA</span>
             </div>
           </div>
 
-          <div class="quote-box">
+          <div class="quote-box" data-i18n="about.quote">
             "มุ่งมั่นพัฒนาเว็บไซต์ที่มีความเสถียร สวยงาม ตอบสนองผู้ใช้ และผ่านการทดสอบคุณภาพ (QA)
             อย่างเข้มงวดเพื่อสร้างคุณค่าที่แท้จริงให้แก่ผู้ใช้งาน"
           </div>
@@ -230,7 +236,7 @@
             <div class="about-card-icon">
               <i class="fa-solid fa-bullseye"></i>
             </div>
-            <h3 class="about-card-title">จุดแข็งและเป้าหมาย (Strengths & Focus)</h3>
+            <h3 class="about-card-title" data-i18n="about.card2_title">จุดแข็งและเป้าหมาย (Strengths & Focus)</h3>
           </div>
 
           <div class="strengths-list">
@@ -239,8 +245,8 @@
                 <i class="fa-solid fa-laptop-code"></i>
               </div>
               <div>
-                <h4 class="strength-title">ทักษะการสร้างและปรับปรุงเว็บไซต์</h4>
-                <p class="strength-desc">มีประสบการณ์ตรงในการพัฒนาและดูแลเว็บไซต์ภาครัฐให้รองรับผู้ใช้งานจริง
+                <h4 class="strength-title" data-i18n="about.str1_title">ทักษะการสร้างและปรับปรุงเว็บไซต์</h4>
+                <p class="strength-desc" data-i18n="about.str1_desc">มีประสบการณ์ตรงในการพัฒนาและดูแลเว็บไซต์ภาครัฐให้รองรับผู้ใช้งานจริง
                   มีโครงสร้างที่เป็นระเบียบ ใช้งานง่าย และมีความปลอดภัย</p>
               </div>
             </div>
@@ -250,8 +256,8 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <div>
-                <h4 class="strength-title">ความละเอียดรอบคอบในการเป็น Tester</h4>
-                <p class="strength-desc">ผ่านการฝึกงานตรวจสอบและค้นหาข้อผิดพลาด (Bugs)
+                <h4 class="strength-title" data-i18n="about.str2_title">ความละเอียดรอบคอบในการเป็น Tester</h4>
+                <p class="strength-desc" data-i18n="about.str2_desc">ผ่านการฝึกงานตรวจสอบและค้นหาข้อผิดพลาด (Bugs)
                   ของโปรแกรมและแอปพลิเคชันอย่างเป็นระบบ ช่วยลดปัญหาและยกระดับคุณภาพซอฟต์แวร์</p>
               </div>
             </div>
@@ -261,8 +267,8 @@
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
               <div>
-                <h4 class="strength-title">พื้นฐานทางวิชาการและผลการเรียนเด่น</h4>
-                <p class="strength-desc">สำเร็จการศึกษาระดับ ปวช. ด้วย GPA 3.88 และระดับ ปวส. ด้วย GPA 3.48
+                <h4 class="strength-title" data-i18n="about.str3_title">พื้นฐานทางวิชาการและผลการเรียนเด่น</h4>
+                <p class="strength-desc" data-i18n="about.str3_desc">สำเร็จการศึกษาระดับ ปวช. ด้วย GPA 3.88 และระดับ ปวส. ด้วย GPA 3.48
                   สะท้อนถึงความรับผิดชอบและความตั้งใจจริงในการเรียนรู้</p>
               </div>
             </div>
@@ -276,9 +282,9 @@
   <section class="section" id="education">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> ประวัติการศึกษา</span>
-        <h2 class="section-title">เส้นทางการศึกษา <span class="gradient-text">(Education)</span></h2>
-        <p class="section-desc">พื้นฐานความรู้ที่สั่งสมตั้งแต่วิชาชีพสู่ระดับอุดมศึกษาด้านเทคโนโลยีสารสนเทศ</p>
+        <span class="section-tag" data-i18n="edu.tag"><i class="fa-solid fa-graduation-cap"></i> ประวัติการศึกษา</span>
+        <h2 class="section-title" data-i18n="edu.title">เส้นทางการศึกษา <span class="gradient-text">(Education)</span></h2>
+        <p class="section-desc" data-i18n="edu.desc">พื้นฐานความรู้ที่สั่งสมตั้งแต่วิชาชีพสู่ระดับอุดมศึกษาด้านเทคโนโลยีสารสนเทศ</p>
       </div>
 
       <div class="timeline" id="educationTimeline">
@@ -290,21 +296,21 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-title">ระดับปริญญาตรี (กำลังศึกษา)</h3>
-                <div class="timeline-institution">มหาวิทยาลัยศรีปทุม (Sripatum University - SPU)</div>
+                <h3 class="timeline-title" data-i18n="edu.item1_title">ระดับปริญญาตรี (กำลังศึกษา)</h3>
+                <div class="timeline-institution" data-i18n="edu.item1_inst">มหาวิทยาลัยศรีปทุม (Sripatum University - SPU)</div>
               </div>
-              <span class="timeline-badge badge-current">
+              <span class="timeline-badge badge-current" data-i18n="edu.item1_badge">
                 <i class="fa-solid fa-spinner fa-spin"></i> ปัจจุบัน
               </span>
             </div>
-            <p class="timeline-desc">
+            <p class="timeline-desc" data-i18n="edu.item1_desc">
               <strong>สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)</strong> — มุ่งเน้นการศึกษาเทคโนโลยีสารสนเทศยุคใหม่,
               การพัฒนาซอฟต์แวร์และแอปพลิเคชัน, สถาปัตยกรรมระบบเครือข่าย, ความมั่นคงปลอดภัยไซเบอร์
               ตลอดจนการประยุกต์ใช้เทคโนโลยีเพื่อตอบสนองธุรกิจยุคดิจิทัล
             </p>
             <div class="timeline-meta">
-              <span><i class="fa-solid fa-location-dot"></i> กรุงเทพมหานคร</span>
-              <span><i class="fa-solid fa-book-open"></i> สาขาวิชา ICT</span>
+              <span data-i18n="edu.item1_loc"><i class="fa-solid fa-location-dot"></i> กรุงเทพมหานคร</span>
+              <span data-i18n="edu.item1_meta"><i class="fa-solid fa-book-open"></i> สาขาวิชา ICT</span>
             </div>
           </div>
         </div>
@@ -317,21 +323,21 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-title">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
-                <div class="timeline-institution">วิทยาลัยอาชีวศึกษานครราชสีมา</div>
+                <h3 class="timeline-title" data-i18n="edu.item2_title">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
+                <div class="timeline-institution" data-i18n="edu.item2_inst">วิทยาลัยอาชีวศึกษานครราชสีมา</div>
               </div>
-              <span class="timeline-badge badge-success">
+              <span class="timeline-badge badge-success" data-i18n="edu.item2_badge">
                 <i class="fa-solid fa-star"></i> GPA 3.48 (ดีเยี่ยม)
               </span>
             </div>
-            <p class="timeline-desc">
+            <p class="timeline-desc" data-i18n="edu.item2_desc">
               <strong>สาขาเทคโนโลยีสารสนเทศ (Information Technology)</strong> — ศึกษาหลักสูตรวิชาชีพขั้นสูงด้านคอมพิวเตอร์และการพัฒนาโปรแกรม เน้นทักษะภาคปฏิบัติ การออกแบบฐานข้อมูล
               การเขียนโค้ดเว็บไซต์ และการลงมือปฏิบัติงานจริงร่วมกับหน่วยงานภาครัฐในจังหวัดนครราชสีมา
             </p>
             <div class="timeline-meta">
-              <span><i class="fa-solid fa-location-dot"></i> จังหวัดนครราชสีมา</span>
-              <span><i class="fa-solid fa-book-open"></i> สาขาเทคโนโลยีสารสนเทศ (IT)</span>
-              <span><i class="fa-solid fa-chart-line"></i> เกรดเฉลี่ยสะสม 3.48</span>
+              <span data-i18n="edu.item2_loc"><i class="fa-solid fa-location-dot"></i> จังหวัดนครราชสีมา</span>
+              <span data-i18n="edu.item2_meta"><i class="fa-solid fa-book-open"></i> สาขาเทคโนโลยีสารสนเทศ (IT)</span>
+              <span data-i18n="edu.item2_gpa"><i class="fa-solid fa-chart-line"></i> เกรดเฉลี่ยสะสม 3.48</span>
             </div>
           </div>
         </div>
@@ -344,21 +350,21 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-title">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
-                <div class="timeline-institution">วิทยาลัยเทคนิคบุรีรัมย์</div>
+                <h3 class="timeline-title" data-i18n="edu.item3_title">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+                <div class="timeline-institution" data-i18n="edu.item3_inst">วิทยาลัยเทคนิคบุรีรัมย์</div>
               </div>
-              <span class="timeline-badge badge-honor">
+              <span class="timeline-badge badge-honor" data-i18n="edu.item3_badge">
                 <i class="fa-solid fa-trophy"></i> GPA 3.88 (เกียรตินิยม)
               </span>
             </div>
-            <p class="timeline-desc">
+            <p class="timeline-desc" data-i18n="edu.item3_desc">
               <strong>สาขาเทคโนโลยีสารสนเทศ (Information Technology)</strong> — สำเร็จการศึกษาด้วยผลการเรียนดีเด่น ปูรากฐานความรู้ด้านคอมพิวเตอร์ ฮาร์ดแวร์ ซอฟต์แวร์เบื้องต้น
               โครงข่ายคอมพิวเตอร์ และการฝึกทักษะการตรวจสอบคุณภาพซอฟต์แวร์ในระดับองค์กรเอกชน
             </p>
             <div class="timeline-meta">
-              <span><i class="fa-solid fa-location-dot"></i> จังหวัดบุรีรัมย์</span>
-              <span><i class="fa-solid fa-book-open"></i> สาขาเทคโนโลยีสารสนเทศ (IT)</span>
-              <span><i class="fa-solid fa-award"></i> เกรดเฉลี่ยสะสม 3.88</span>
+              <span data-i18n="edu.item3_loc"><i class="fa-solid fa-location-dot"></i> จังหวัดบุรีรัมย์</span>
+              <span data-i18n="edu.item3_meta"><i class="fa-solid fa-book-open"></i> สาขาเทคโนโลยีสารสนเทศ (IT)</span>
+              <span data-i18n="edu.item3_gpa"><i class="fa-solid fa-award"></i> เกรดเฉลี่ยสะสม 3.88</span>
             </div>
           </div>
         </div>
